@@ -1,0 +1,73 @@
+https://training.pada-x.com/javascript-practical.htm	老師的網頁
+
+下載node.js
+下載16.17.0 LTS版
+
+指令
+cls清除
+node --version確認版本
+npm --version 套件版本
+npm install   復原原本裝好的套件(但根據package.json)須注意
+
+1.安裝node.js
+2.使用Vscode內終端機
+3.初始化NPM專案
+npm init -y
+
+4.安裝第三方的套件
+	npm install 套件名稱 --save	
+	npm install 套件名稱 --save-dev	(開發階段使用)
+
+	測試 npm install express --save
+5.解除安裝第三方的套件
+	npm uninstall 套件名稱
+
+6.安裝 Webpack(模組化功能)
+	npm install webpack webpack-cli --save-dev
+
+
+(很重要~要有專案管理概念)
+7.執行NPM專案中的指令(Scripts)	(先在package.json內的scripts內部設定執行"執行名稱":"webpack"指令)
+	npm run 指令名稱
+
+8.
+webpack要能編譯Css需先安裝套裝軟體上Webpack網站
+
+Documentation--->Guides--->Asset Management-->Loading CSS
+
+安裝後須在webpack.config.js 內設定
+
+
+9.
+另外要使用sass功能也須先安裝套裝軟體
+
+Documentation--->Loaders--->CSS-->sass-loader
+
+安裝後須在webpack.config.js 內設定
+
+10.
+若要使用webpack server自動編譯功能
+
+Documentation--->Guides--->Development-->找到Using webpack-dev-server
+
+安裝後須在webpack.config.js 內設定
+
+11.
+React
+安裝 npm install react react-dom --save
+
+12.
+Babel-->JSX
+官網Setup-->webpack
+安裝 npm install --save-dev babel-loader @babel/core
+安裝後須在webpack.config.js 內設定
+再創一個babel.config.json設定檔
+在安裝 npm install @babel/preset-env @babel/preset-react --save-dev
+在設定檔加入{
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+
+  }
+
+
+window.localStorage.setItem("data-key", "字串型態的資料");--->可以讓網頁有暫存資料庫
+window.localStorage.getItem("data-key");-->取出方式
