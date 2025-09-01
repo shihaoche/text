@@ -1,0 +1,53 @@
+
+.Navlist{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.Navlist_school{
+    margin: 50px;
+}
+
+.Navlist_school>li{
+    margin-bottom: 20px;
+}
+
+.Navlist_department{
+    margin: 50px;
+}
+
+.Navlist_department>li{
+    margin-bottom: 20px;
+}
+
+.Navline{
+    
+    margin: 10px 80px 10px 0px;
+    border-left: 2px solid rgb(165, 155, 155);
+}
+.Navimge{
+    width: 200px;
+    height: 200px;
+    background-image: url(/image/測試使用.jpg);
+    background-position: center;
+	background-size:cover;
+}
+
+.Navimge_process{
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    background-image: url(/image/IMG_8263.JPG);
+    background-position: center;
+	background-size:cover;
+}
+
+.Navlist_page{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.Navlist_page-color{
+    color: red;
+}
